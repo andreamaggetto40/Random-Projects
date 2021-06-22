@@ -1,5 +1,10 @@
-
 #include <iostream>
+
+/**
+ * @brief : library to provide useful methods to singly-linked list handling
+ * @version : 1.0
+ * @author : Andrea Maggetto
+*/
 
 class list{
     struct cell{
@@ -77,6 +82,11 @@ class list{
                 return sum;
             }
         }
+
+        /**
+         * @overload : [] operator overloading : used to get the positioned-index element of the list
+        */
+       
         int operator[](int element){
             if(l and last){
                 int index{0}; bool flag = true;
