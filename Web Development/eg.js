@@ -20,4 +20,7 @@ function checkData(){
         let aPerson = new person(name,lastName);
         aPerson.toString();
     }
+     else{
+        alert("An error occured!");
+    }
 }
