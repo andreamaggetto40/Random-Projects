@@ -68,27 +68,31 @@ class List{
             cell *iterator{};
             int result{};
 
-            if(index >= 0 and index < this->size()){
-                counter = 0;
-                iterator = head;
+             if(size()){
+                if(index >= 0){
+                    counter = 0;
+                    iterator = head;
 
-                while(counter < index){
-                    counter++;
-                    iterator = iterator->next;
+                    while(counter < index){
+                        counter++;
+                        iterator = iterator->next;
+                    }
+
+                    result = iterator->data;
                 }
+                else{
+                    iterator = tail;
+                    counter = -1;
 
-                result = iterator->data;
-            } 
-            else{
-                counter = -1;
-                iterator = tail;
+                    while(counter > index){
+                        counter--;
+                        iterator = iterator->prev;
+                    }
 
-                while(counter > index){
-                    iterator = iterator->prev;
+                    result = iterator->data;
                 }
+            }
 
-                result = iterator->data;
-            }     
-            return result; 
+            return result;
         }
 };
