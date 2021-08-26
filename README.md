@@ -1,2 +1,2 @@
 # Random-Projects
-a repo containing several university coding courses projects developed used different lamguages and frameworks.
+a repo containing projects and exercises developed using multiple programming languages (both developed during university period and spare-time)
